@@ -4,6 +4,10 @@
   justify-content: center;
   height: 100%;
   flex-direction: column;
+} 
+
+a {
+  font-size: 1rem
 }
 
 input,
