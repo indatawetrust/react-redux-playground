@@ -72,3 +72,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Built With
+
+- [reduxsauce](https://github.com/jkeam/reduxsauce)
+- [redux-saga](https://github.com/redux-saga/redux-saga)
+- [reselect](https://github.com/reduxjs/reselect)
+- [redux-immer](https://github.com/salvoravida/redux-immer)
+- [React Router](https://github.com/ReactTraining/react-router)
