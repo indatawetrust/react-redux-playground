@@ -1,10 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[![Edit react-playground](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-playground-y7wzd?fontsize=14&hidenavigation=1&theme=dark)
-
-## gif
-
-![gif](http://g.recordit.co/BvhmsD3Z60.gif)
+[![Edit react-playground](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/indatawetrust/react-redux-playground/tree/master/?fontsize=14&hidenavigation=1&theme=dark)
 
 ## Available Scripts
 
