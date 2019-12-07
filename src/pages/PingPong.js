@@ -3,6 +3,9 @@ import { connect } from "react-redux";
 import { Creators } from "../reducers";
 import { createSelector } from "reselect";
 import Grid from "@material-ui/core/Grid";
+import TextField from "@material-ui/core/TextField";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
 
 function PingPong({ dispatch, stage, delayTime: delay }) {
   const toggle = () => dispatch(Creators.toggleStatus());
@@ -15,9 +18,10 @@ function PingPong({ dispatch, stage, delayTime: delay }) {
       style={{
         height: "calc(100vh - 64px)"
       }}
+      direction="column"
     >
-      <div>
-        <input
+      <Grid>
+        <TextField
           type="number"
           value={delay}
           onInput={e => {
@@ -25,9 +29,15 @@ function PingPong({ dispatch, stage, delayTime: delay }) {
             dispatch(Creators.changeDelay(_delay));
           }}
         />
-        <button onClick={toggle}>{stage ? "stop" : "start"}</button>
-      </div>
-      <div>{stage}</div>
+        <Button onClick={toggle} variant="contained">
+          {stage ? "stop" : "start"}
+        </Button>
+      </Grid>
+      <Grid>
+        <Typography variant="h1" component="h2" gutterBottom>
+          {stage}
+        </Typography>
+      </Grid>
     </Grid>
   );
 }
