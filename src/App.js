@@ -11,7 +11,7 @@ function App() {
       <div>
         <AppBar />
         <Switch>
-          <Route path="/ping-pong">
+          <Route path="/">
             <PingPong />
           </Route>
         </Switch>
