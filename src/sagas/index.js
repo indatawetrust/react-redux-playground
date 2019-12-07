@@ -1,5 +1,5 @@
 import { fork, put, delay, select, take, cancel } from "redux-saga/effects";
-import { Types } from "../reducers";
+import { Types, Creators } from "../reducers";
 
 export function* toggle() {
   let pingTask = null;
@@ -12,7 +12,7 @@ export function* toggle() {
     if (stage) {
       pingTask = yield fork(ping);
 
-      yield put({ type: Types.PING });
+      yield put(Creators.ping());
     } else {
       yield cancel(pingTask);
     }
@@ -29,7 +29,7 @@ export function* ping() {
 
     yield delay(delayTime);
 
-    yield put({ type: Types.PONG, delayTime });
+    yield put(Creators.pong());
   }
 }
 
@@ -41,7 +41,7 @@ export function* pong() {
 
     yield delay(delayTime);
 
-    yield put({ type: Types.PING, delayTime });
+    yield put(Creators.ping());
   }
 }
 

@@ -4,14 +4,4 @@
   justify-content: center;
   height: 100%;
   flex-direction: column;
-} 
-
-a {
-  font-size: 1rem
-}
-
-input,
-button {
-  padding: 0.5rem;
-  font-size: 0.5rem;
 }
